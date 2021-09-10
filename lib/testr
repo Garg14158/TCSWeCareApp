@@ -1,0 +1,35 @@
+                 Container(
+                    width: 605,
+                    height: 107,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                        Color.fromARGB(255, 229, 60, 132), 
+                        Color.fromARGB(255, 121, 72, 153), ],
+                        begin: Alignment.topRight,
+                        end: Alignment.bottomLeft
+                      )
+                    ),
+                  )
+replace halfcircle.png w a container and circle, 
+position gradient inkwell
+
+
+Stack(
+            alignment: AlignmentDirectional.topCenter,
+            children: <Widget> [
+                  Image.asset('assets/images/halfcircle.png',
+                  width: screenSize.width * 2,
+                  ),
+                  
+                  Image.asset('assets/images/fly.png', 
+                    height: 323.96,
+                    width: 246.99,
+                  ),
+                  Positioned(
+                    child: Image.asset('assets/images/logo2.png',
+                    height: 32,
+                    width: 172,
+                    ),
+                  )
+            ]),
